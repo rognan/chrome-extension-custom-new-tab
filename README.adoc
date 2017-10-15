@@ -11,7 +11,7 @@ endif::[]
 
 '''
 
-NOTE: Chrome extension that creates a custom 'new tab'.
+_Chrome extension that creates a custom 'new tab'._
 
 image::example.png[]
 
