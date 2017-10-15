@@ -1,0 +1,15 @@
+= Custom New Tab
+Thor Andreas Rognan <thor.rognan@gmail.com>
+:imagesdir: doc/assets/images
+
+'''
+
+NOTE: Chrome extension that creates a custom 'new tab'.
+
+image::example.png[]
+
+== Copyright and Licensing
+Copyright (C) 2017- Thor Andreas Rognan
+Free use of this software is granted under the terms of the MIT License.
+
+See the <<LICENSE#,LICENSE>> file for details.
