@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './index.less'
+import styles from './index.less';
 
 class Favorites extends React.Component {
   constructor(props) {

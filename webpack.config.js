@@ -20,14 +20,14 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ["babel-loader"]
+        use: ["babel-loader", "eslint-loader"]
       },
       {
         test: /\.(css|less)$/,
         use: [
           {loader: 'style-loader'},
           {loader: 'css-loader', options: {modules: true, sourceMap: true, camelCase: true, import: true, importLoaders: 2}},
-          {loader: 'postcss-loader', options: {ident: 'postcss', plugins: (loader) => [require('autoprefixer')()]}},
+          {loader: 'postcss-loader', options: {ident: 'postcss', plugins: [require('autoprefixer')()]}},
           {loader: 'less-loader'},
         ]
       }
@@ -54,4 +54,4 @@ module.exports = {
     contentBase: path.resolve(__dirname, DIST),
     hot: true
   }
-}
+};
