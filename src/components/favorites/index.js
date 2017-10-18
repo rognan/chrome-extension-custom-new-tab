@@ -1,45 +1,58 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styles from './index.less';
+
+const List = (props) => {
+  const heading = props.heading;
+  const items = props.items.map((item, key) =>
+    <li key={key}><a href={item.url}>{item.title}</a></li>
+  );
+
+  return (
+    <div>
+      <h3>{heading}</h3>
+      <ul>{items}</ul>
+    </div>
+  );
+};
+
+List.propTypes = {
+  heading: PropTypes.string.isRequired,
+  items: PropTypes.array.isRequired
+};
 
 class Favorites extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { favorites: null };
+    this.state = {
+      read: [
+        {title: "Reddit", url: "http://www.reddit.com"},
+        {title: "HackerNews", url: "https://news.ycombinator.com"}
+      ],
+      learn: [
+        {title: "DuoLingo", url: "https://www.duolingo.com/"},
+        {title: "Khanacademy", url: "https://www.khanacademy.org/"},
+        {title: "Codecademy", url: "https://www.codecademy.com/"}
+      ],
+      make: [
+        {title: "CodePen", url: "https://codepen.io"},
+        {title: "GitHub", url: "https://github.com"},
+        {title: "StackOverflow", url: "https://stackoverflow.com"}
+      ],
+      google: [
+        {title: "Mail", url: "https://mail.google.com/"},
+        {title: "Calendar", url: "https://calendar.google.com/"},
+        {title: "Analytics", url: "https://analytics.google.com/"}
+      ]
+    };
   }
   render() {
     return (
       <section className={styles.favorites}>
-        <div>
-          <h3>Read</h3>
-          <ul>
-            <li><a href="http://www.reddit.com">Reddit</a></li>
-            <li><a href="https://news.ycombinator.com">HackerNews</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Learn</h3>
-          <ul>
-            <li><a href="https://www.duolingo.com/">DuoLingo</a></li>
-            <li><a href="https://www.khanacademy.org/">Khanacademy</a></li>
-            <li><a href="https://www.codecademy.com/">Codecademy</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Make</h3>
-          <ul>
-            <li><a href="https://codepen.io">CodePen</a></li>
-            <li><a href="https://github.com">GitHub</a></li>
-            <li><a href="https://stackoverflow.com">StackOverflow</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Google</h3>
-          <ul>
-            <li><a href="https://mail.google.com">Mail</a></li>
-            <li><a href="https://calendar.google.com">Calendar</a></li>
-            <li><a href="https://analytics.google.com">Analytics</a></li>
-          </ul>
-        </div>
+        <List heading="Read" items={this.state.read} />
+        <List heading="Learn" items={this.state.learn} />
+        <List heading="Make" items={this.state.make} />
+        <List heading="Google" items={this.state.google} />
       </section>
     );
   }
