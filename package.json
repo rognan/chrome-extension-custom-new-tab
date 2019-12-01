@@ -3,6 +3,9 @@
   "version": "0.0.1",
   "description": "Customized new tab",
   "main": "src/index.js",
+  "browserslist": [
+    "chrome >= 78"
+  ],
   "scripts": {
     "clean": "rimraf dist",
     "lint:styles": "stylelint '**/*.less'",
@@ -52,6 +55,7 @@
     "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
+    "core-js": "^3.4.5",
     "prop-types": "^15.7.2",
     "raven-js": "^3.27.2",
     "react": "^16.12.0",
