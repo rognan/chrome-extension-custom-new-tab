@@ -9,6 +9,7 @@ const DIST = path.resolve(__dirname, 'dist');
 
 module.exports = {
   devtool: 'source-map',
+  mode: 'production',
   entry: {
     extension: path.resolve(SRC, 'index.js')
   },
@@ -27,7 +28,7 @@ module.exports = {
         test: /\.(css|less)$/,
         use: [
           {loader: 'style-loader'},
-          {loader: 'css-loader', options: {modules: true, sourceMap: true, camelCase: true, import: true, importLoaders: 2}},
+          {loader: 'css-loader', options: {modules: true, sourceMap: true, localsConvention: 'camelCase', import: true, importLoaders: 2}},
           {loader: 'postcss-loader', options: {ident: 'postcss', plugins: [require('autoprefixer')()]}},
           {loader: 'less-loader'},
         ]
