@@ -54,7 +54,7 @@
     "stylelint-webpack-plugin": "^0.10.5",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.9.0"
+    "webpack-dev-server": "^3.10.0"
   },
   "dependencies": {
     "@sentry/browser": "^5.10.2",
