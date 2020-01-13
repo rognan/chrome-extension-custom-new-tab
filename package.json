@@ -28,7 +28,7 @@
   "homepage": "https://github.com/rognan/chrome-extension-custom-new-tab#readme",
   "devDependencies": {
     "@babel/core": "^7.7.7",
-    "@babel/preset-env": "^7.7.7",
+    "@babel/preset-env": "^7.8.2",
     "@babel/preset-react": "^7.0.0",
     "autoprefixer": "^9.7.3",
     "babel-eslint": "^10.0.3",
