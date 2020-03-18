@@ -5,17 +5,15 @@ import ErrorBoundary from './components/error-boundary';
 import Favorites from './components/favorites';
 import './styles/index.less';
 
-export default class App extends React.Component {
-  render() {
-    return (
-      <section>
+const App = () => {
+  return (
+    <section>
         <Clock format={'HH:mm'} ticking={true} timezone={'Europe/Oslo'} interval={3000} />
         <hr />
         <Favorites />
-      </section>
-    );
-  }
-}
+    </section>
+  );
+};
 
 render(
   <ErrorBoundary>
