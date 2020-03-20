@@ -67,7 +67,7 @@
     "@sentry/browser": "^5.14.2",
     "core-js": "^3.6.4",
     "prop-types": "^15.7.2",
-    "react": "^16.13.0",
+    "react": "^16.13.1",
     "react-dom": "^16.13.0",
     "react-live-clock": "^4.0.3"
   }
