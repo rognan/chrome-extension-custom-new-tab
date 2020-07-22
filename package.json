@@ -6,6 +6,9 @@
   "browserslist": [
     "chrome >= 78"
   ],
+  "engines": {
+    "node": ">=10.13"
+  },
   "scripts": {
     "clean": "rimraf dist",
     "lint:styles": "stylelint '**/*.less'",
@@ -35,7 +38,7 @@
     "autoprefixer": "^9.8.5",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.1.0",
-    "copy-webpack-plugin": "^5.1.1",
+    "copy-webpack-plugin": "^6.0.3",
     "cross-env": "^7.0.2",
     "css-loader": "^3.6.0",
     "enzyme": "^3.11.0",
