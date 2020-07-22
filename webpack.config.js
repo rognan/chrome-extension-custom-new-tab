@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
 
 const SRC = path.resolve(__dirname, 'src');
@@ -46,9 +46,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.resolve(SRC, 'index.html')
     }),
-    new CopyWebpackPlugin([
-      {from: path.resolve(SRC, 'manifest.json')}
-    ]),
+    new CopyPlugin({
+      patterns: [
+        { from: path.resolve(SRC, 'manifest.json'), to: DIST}
+      ]
+    }),
     new webpack.HotModuleReplacementPlugin()
   ],
   devServer: {
