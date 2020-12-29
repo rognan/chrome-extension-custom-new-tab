@@ -8,7 +8,7 @@ class Favorites extends React.Component {
     this.state = {
       lists: [
         {heading: "Read", links: [
-          {title: "Reddit", url: "http://www.reddit.com"},
+          {title: "Reddit", url: "https://www.reddit.com"},
           {title: "HackerNews", url: "https://news.ycombinator.com"}
         ]},
         {heading: "Learn", links: [
