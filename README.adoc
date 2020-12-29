@@ -9,6 +9,8 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
+https://sonarcloud.io/dashboard?id=rognan_chrome-extension-custom-new-tab[image:https://sonarcloud.io/api/project_badges/measure?project=rognan_chrome-extension-custom-new-tab&metric=alert_status[Sonarcloud Status]]
+
 _Chrome extension that creates a custom 'new tab'._
 
 image::example.png[]
