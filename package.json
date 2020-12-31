@@ -11,7 +11,9 @@
     "node": ">=14.15"
   },
   "scripts": {
-    "clean": "rimraf dist",
+    "clean:coverage": "rimraf coverage",
+    "clean:dist": "rimraf dist",
+    "clean": "run-p clean:*",
     "lint:styles": "stylelint '**/*.less'",
     "lint:js": "eslint . --ignore-path .gitignore",
     "lint:lockfile": "lockfile-lint --type npm --path package-lock.json --allowed-hosts npm --validate-https",
