@@ -19,7 +19,7 @@
     "lint:lockfile": "lockfile-lint --type npm --path package-lock.json --allowed-hosts npm --validate-https",
     "lint": "run-p lint:*",
     "prebuild": "run-s clean",
-    "build": "cross-env NODE_ENV=production webpack",
+    "build": "webpack",
     "start": "webpack-dev-server --inline --open",
     "test:js": "jest --coverage",
     "test": "run-p test:*"
@@ -50,7 +50,6 @@
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "copy-webpack-plugin": "^6.3.1",
-    "cross-env": "^7.0.3",
     "css-loader": "^5.0.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.5",
