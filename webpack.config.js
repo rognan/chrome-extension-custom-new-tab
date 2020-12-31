@@ -29,7 +29,7 @@ module.exports = {
         use: [
           {loader: 'style-loader'},
           {loader: 'css-loader', options: {modules: { exportLocalsConvention: 'camelCase' }, sourceMap: true, import: true, importLoaders: 2}},
-          {loader: 'postcss-loader', options: {ident: 'postcss', plugins: [require('autoprefixer')()]}},
+          {loader: 'postcss-loader', options: {postcssOptions: {plugins:[['autoprefixer',{}]]}}},
           {loader: 'less-loader'},
         ]
       }
