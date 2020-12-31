@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "private": true,
   "browserslist": [
-    "chrome >= 78"
+    "chrome >= 87"
   ],
   "engines": {
     "node": ">=14.15"
