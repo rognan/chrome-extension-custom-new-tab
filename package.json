@@ -19,7 +19,7 @@
     "lint:lockfile": "lockfile-lint --type npm --path package-lock.json --allowed-hosts npm --validate-https",
     "lint": "run-p lint:*",
     "prebuild": "run-s clean",
-    "build": "cross-env NODE_ENV=production webpack --optimize-minimize",
+    "build": "cross-env NODE_ENV=production webpack",
     "start": "webpack-dev-server --inline --open",
     "test:js": "jest --coverage",
     "test": "run-p test:*"
