@@ -20,11 +20,6 @@ class Favorites extends React.Component {
           {title: "CodePen", url: "https://codepen.io"},
           {title: "GitHub", url: "https://github.com"},
           {title: "StackOverflow", url: "https://stackoverflow.com"}
-        ]},
-        {heading: "Google", links: [
-          {title: "Mail", url: "https://mail.google.com/"},
-          {title: "Calendar", url: "https://calendar.google.com/"},
-          {title: "Analytics", url: "https://analytics.google.com/"}
         ]}
       ]
     };
