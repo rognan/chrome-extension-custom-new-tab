@@ -7,10 +7,6 @@ class Favorites extends React.Component {
     super(props);
     this.state = {
       lists: [
-        {heading: "Read", links: [
-          {title: "Reddit", url: "https://www.reddit.com"},
-          {title: "HackerNews", url: "https://news.ycombinator.com"}
-        ]},
         {heading: "Learn", links: [
           {title: "DuoLingo", url: "https://www.duolingo.com/"},
           {title: "Khanacademy", url: "https://www.khanacademy.org/"},
@@ -20,6 +16,10 @@ class Favorites extends React.Component {
           {title: "CodePen", url: "https://codepen.io"},
           {title: "GitHub", url: "https://github.com"},
           {title: "StackOverflow", url: "https://stackoverflow.com"}
+        ]},
+        {heading: "Read", links: [
+          {title: "Reddit", url: "https://www.reddit.com"},
+          {title: "HackerNews", url: "https://news.ycombinator.com"}
         ]}
       ]
     };
