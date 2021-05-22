@@ -11,9 +11,11 @@ endif::[]
 
 https://sonarcloud.io/dashboard?id=rognan_chrome-extension-custom-new-tab[image:https://sonarcloud.io/api/project_badges/measure?project=rognan_chrome-extension-custom-new-tab&metric=alert_status[Sonarcloud Status]]
 
-_Chrome extension that creates a custom 'new tab'._
+_A custom 'new tab' Chrome extension._
 
 image::example.png[]
+
+Try it out by running `npm run build` and then load the unpacked extension found in the `dist` folder.
 
 == Copyright and Licensing
 Copyright (C) 2017- Thor Andreas Rognan
