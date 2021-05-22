@@ -16,9 +16,3 @@ _A custom 'new tab' Chrome extension._
 image::example.png[]
 
 Try it out by running `npm run build` and then load the unpacked extension found in the `dist` folder.
-
-== Copyright and Licensing
-Copyright (C) 2017- Thor Andreas Rognan
-Free use of this software is granted under the terms of the MIT License.
-
-See the <<LICENSE#,LICENSE>> file for details.
