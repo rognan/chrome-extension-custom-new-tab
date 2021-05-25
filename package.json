@@ -78,7 +78,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
-    "@sentry/browser": "^5.27.4",
+    "@sentry/browser": "^6.4.1",
     "core-js": "^3.12.1",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
