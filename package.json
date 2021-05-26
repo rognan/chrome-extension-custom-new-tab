@@ -79,7 +79,7 @@
   },
   "dependencies": {
     "@sentry/browser": "^5.27.4",
-    "core-js": "^3.12.1",
+    "core-js": "^3.13.0",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
