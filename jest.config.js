@@ -1,7 +1,4 @@
 module.exports = {
-  globals: {
-    rollerJson: {}
-  },
   moduleDirectories: ['node_modules', 'src'],
   moduleNameMapper: {
     '@js-src(.*)$': '<rootDir>/src$1',
