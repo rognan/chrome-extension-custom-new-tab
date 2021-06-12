@@ -1,6 +1,19 @@
 module.exports = {
-  rootDir: '..',
-  moduleDirectories: ['node_modules', 'src'],
-  setupFilesAfterEnv: ['<rootDir>/buildSrc/setupTest.js'],
-  testEnvironment: 'jsdom'
+  rootDir: null,
+  roots: ['../src'],
+  collectCoverage: true,
+  coverageDirectory: 'coverage',
+  coveragePathIgnorePatterns: [
+    "/node_modules/"
+  ],
+  coverageReporters: ['text-summary'],
+  moduleDirectories: ['node_modules'],
+  setupFilesAfterEnv: ['./setupTest.js'],
+  testEnvironment: 'jsdom',
+  testMatch: [
+    "**/__tests__/**/*.js"
+  ],
+  testPathIgnorePatterns: [
+    "/node_modules/"
+  ]
 };
