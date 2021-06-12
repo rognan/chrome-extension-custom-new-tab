@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import Clock from 'react-live-clock';
 import ErrorBoundary from './components/error-boundary';
 import Favorites from './components/favorites';
-import './styles/index.less';
+import './styles/index.css';
 
 const App = () => {
   return (

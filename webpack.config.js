@@ -25,12 +25,11 @@ module.exports = {
         use: ["babel-loader", "eslint-loader"]
       },
       {
-        test: /\.(css|less)$/,
+        test: /\.css$/,
         use: [
           {loader: 'style-loader'},
           {loader: 'css-loader', options: {modules: { exportLocalsConvention: 'camelCase' }, sourceMap: true, import: true, importLoaders: 2}},
           {loader: 'postcss-loader', options: {postcssOptions: {plugins:[['autoprefixer',{}]]}}},
-          {loader: 'less-loader'},
         ]
       }
     ]
@@ -41,7 +40,7 @@ module.exports = {
   plugins: [
     new StyleLintPlugin({
       configFile: '.stylelintrc',
-      files: ['**/*.less']
+      files: ['**/*.css']
     }),
     new HtmlWebpackPlugin({
       template: path.resolve(SRC, 'index.html')

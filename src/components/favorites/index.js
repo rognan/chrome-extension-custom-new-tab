@@ -1,6 +1,6 @@
 import React from 'react';
 import List from './list';
-import styles from './index.less';
+import styles from './index.css';
 
 class Favorites extends React.Component {
   constructor(props) {

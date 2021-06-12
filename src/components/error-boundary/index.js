@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { init, captureException, lastEventId, showReportDialog } from '@sentry/browser';
-import styles from './index.less';
+import styles from './index.css';
 
 class ErrorBoundary extends React.Component {
   constructor(props) {

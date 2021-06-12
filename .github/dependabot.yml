@@ -81,10 +81,6 @@ updates:
       versions:
       - 24.3.4
       - 24.3.5
-    - dependency-name: less-loader
-      versions:
-      - 8.0.0
-      - 8.1.0
     - dependency-name: stylelint
       versions:
       - 13.12.0
