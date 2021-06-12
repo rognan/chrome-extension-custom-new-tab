@@ -1,9 +1,6 @@
 {
-  "name": "Custom 'new tab'",
-  "description": "Customized 'new tab' page",
-  "version": "0.0.1",
-  "incognito": "split",
-  "chrome_url_overrides": {"newtab": "index.html"},
-  "permissions": ["storage"],
-  "manifest_version": 2
+  "manifest_version": 3,
+  "version": "0.1.0",
+  "name": "New 'new tab'",
+  "chrome_url_overrides": { "newtab": "index.html" }
 }
