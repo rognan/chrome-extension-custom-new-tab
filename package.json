@@ -21,7 +21,7 @@
     "prebuild": "run-s clean",
     "build": "webpack",
     "start": "webpack-dev-server --inline --open",
-    "test:js": "jest --coverage",
+    "test:js": "jest -c buildSrc/jest.config.js",
     "test": "run-p test:*"
   },
   "jest": {
