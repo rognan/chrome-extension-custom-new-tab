@@ -8,7 +8,7 @@ class ErrorBoundary extends React.Component {
     super(props);
     this.state = {hasError: false};
     init({
-        dsn: 'https://ae0abaf060a842dd8996a744473193c3@sentry.io/227131'
+      dsn: 'https://ae0abaf060a842dd8996a744473193c3@sentry.io/227131'
     });
   }
   componentDidCatch(error, info) {
