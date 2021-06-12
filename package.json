@@ -24,12 +24,6 @@
     "test:js": "jest -c buildSrc/jest.config.js",
     "test": "run-p test:*"
   },
-  "jest": {
-    "collectCoverage": true,
-    "coveragePathIgnorePatterns": [
-      "/node_modules/"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/rognan/chrome-extension-custom-new-tab.git"
