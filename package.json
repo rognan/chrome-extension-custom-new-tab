@@ -6,7 +6,7 @@
   "private": true,
   "sideEffects": ["*.css"],
   "browserslist": [
-    "chrome >= 87"
+    "last 2 Chrome versions"
   ],
   "engines": {
     "node": ">=14.15"
