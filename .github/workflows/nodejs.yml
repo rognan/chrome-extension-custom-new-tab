@@ -1,29 +1,38 @@
-# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
-# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
-
-name: Node.js CI
-
+name: CI Build
 on:
   push:
     branches: [ master ]
   pull_request:
     branches: [ master ]
-
 jobs:
   build:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [14.x]
     steps:
     - uses: actions/checkout@v2
       with:
         fetch-depth: 0
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Configure Node v14.17
       uses: actions/setup-node@v2.1.5
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: '14.17.1'
+    - name: Cache ~/.npm directory
+      uses: actions/cache@v2
+      env:
+        cache-name: cache-npm-dir
+      with:
+        path: |
+          ~/.npm
+          ~/.cache/ms-playwright
+        key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-build-${{ env.cache-name }}-
+          ${{ runner.os }}-build-
+          ${{ runner.os }}-
     - run: npm ci
-    - run: npm run build --if-present
     - run: npm run lint
     - run: npm test
+    - uses: actions/upload-artifact@v2
+      if: ${{ success() }}
+      with:
+        name: screenshot
+        path: ./build/playwright/screenshot.png
