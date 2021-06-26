@@ -4,6 +4,7 @@
   "description": "Customized new tab",
   "main": "src/index.js",
   "private": true,
+  "sideEffects": ["*.css"],
   "browserslist": [
     "chrome >= 87"
   ],
