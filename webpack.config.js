@@ -8,7 +8,6 @@ const SRC = path.resolve(__dirname, 'src');
 const DIST = path.resolve(__dirname, 'dist');
 
 module.exports = {
-  devtool: 'source-map',
   mode: 'production',
   entry: {
     extension: path.resolve(SRC, 'index.js')
@@ -28,7 +27,7 @@ module.exports = {
         test: /\.css$/,
         use: [
           {loader: 'style-loader'},
-          {loader: 'css-loader', options: {modules: { exportLocalsConvention: 'camelCase' }, sourceMap: true, import: true, importLoaders: 2}},
+          {loader: 'css-loader', options: {modules: { exportLocalsConvention: 'camelCase' }, sourceMap: false, import: true, importLoaders: 2}},
           {loader: 'postcss-loader', options: {postcssOptions: {plugins:[['autoprefixer',{}]]}}},
         ]
       }
