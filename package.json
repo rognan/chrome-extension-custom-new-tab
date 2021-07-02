@@ -67,7 +67,7 @@
     "path": "^0.12.7",
     "playwright": "^1.12.3",
     "postcss": "^8.3.5",
-    "postcss-loader": "^6.1.0",
+    "postcss-loader": "^6.1.1",
     "react-hot-loader": "^4.13.0",
     "rimraf": "^3.0.2",
     "style-loader": "^3.0.0",
