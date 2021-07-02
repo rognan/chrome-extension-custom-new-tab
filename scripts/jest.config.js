@@ -8,7 +8,6 @@ module.exports = {
   ],
   coverageReporters: ['text-summary'],
   moduleDirectories: ['node_modules'],
-  setupFilesAfterEnv: ['./setupTest.js'],
   testEnvironment: 'jsdom',
   testMatch: [
     "**/__tests__/**/*.js"
