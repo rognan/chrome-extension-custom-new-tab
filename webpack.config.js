@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
@@ -50,7 +49,6 @@ module.exports = {
         { from: path.resolve(SRC, 'manifest.json'), to: DIST}
       ]
     }),
-    new webpack.HotModuleReplacementPlugin(),
     new ESLintPlugin({})
   ],
   devServer: {
