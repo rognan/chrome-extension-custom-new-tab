@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
 const StyleLintPlugin = require('stylelint-webpack-plugin');
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 const SRC = path.resolve(__dirname, 'src');
 const DIST = path.resolve(__dirname, 'dist');
@@ -21,7 +22,7 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: ["babel-loader", "eslint-loader"]
+        use: ["babel-loader"]
       },
       {
         test: /\.css$/,
@@ -49,7 +50,8 @@ module.exports = {
         { from: path.resolve(SRC, 'manifest.json'), to: DIST}
       ]
     }),
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
+    new ESLintPlugin({})
   ],
   devServer: {
     port: 3000,
