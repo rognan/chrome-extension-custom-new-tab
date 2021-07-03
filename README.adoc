@@ -1,6 +1,5 @@
-= Custom New Tab
+= New Tab
 Thor Andreas Rognan <thor.rognan@gmail.com>
-:imagesdir: doc/assets/images
 ifdef::env-github[]
 :tip-caption: :bulb:
 :note-caption: :information_source:
@@ -9,8 +8,4 @@ ifdef::env-github[]
 :warning-caption: :warning:
 endif::[]
 
-_A custom 'new tab' Chrome extension._
-
-image::example.png[]
-
-Try it out by running `npm run build` and then load the unpacked extension found in the `dist` folder.
+_Custom Chrome extension_
