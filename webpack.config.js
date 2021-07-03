@@ -28,7 +28,6 @@ module.exports = {
         use: [
           {loader: 'style-loader'},
           {loader: 'css-loader', options: {modules: { exportLocalsConvention: 'camelCase' }, sourceMap: false, import: true, importLoaders: 2}},
-          {loader: 'postcss-loader', options: {postcssOptions: {plugins:[['autoprefixer',{}]]}}},
         ]
       }
     ]
