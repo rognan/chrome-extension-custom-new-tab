@@ -62,7 +62,7 @@
     "path": "^0.12.7",
     "playwright": "^1.14.1",
     "rimraf": "^3.0.2",
-    "style-loader": "^3.2.1",
+    "style-loader": "^3.3.0",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^22.0.0",
     "stylelint-webpack-plugin": "^3.0.1",
