@@ -44,7 +44,7 @@
     "@babel/preset-react": "^7.16.0",
     "@playwright/test": "^1.17.1",
     "@testing-library/react": "^12.1.2",
-    "@types/react": "^17.0.36",
+    "@types/react": "^17.0.37",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.3",
     "copy-webpack-plugin": "^10.0.0",
