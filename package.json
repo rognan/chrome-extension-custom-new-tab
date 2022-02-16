@@ -39,7 +39,7 @@
   },
   "homepage": "https://github.com/rognan/chrome-extension-custom-new-tab#readme",
   "devDependencies": {
-    "@babel/core": "^7.16.5",
+    "@babel/core": "^7.17.4",
     "@babel/preset-env": "^7.16.5",
     "@babel/preset-react": "^7.16.5",
     "@playwright/test": "^1.17.1",
